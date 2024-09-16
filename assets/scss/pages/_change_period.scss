@@ -1,0 +1,18 @@
+
+
+body {
+  background-color: $pink-200;
+}
+.calendar {
+  background-color: $primary-extra-light;
+  min-width: 335px;
+}
+
+.day {
+  width: 27px;
+  height: 27px;
+}
+.border-line-dashed {
+  border-style: dashed; 
+}
+

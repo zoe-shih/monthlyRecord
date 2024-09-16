@@ -1,0 +1,64 @@
+// toggle 切換年份、月份
+.toggleContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  border: 3px solid $primary-light;
+  border-radius: 20px;
+  background: $primary-light; //pink
+  font-weight: bold;
+  color: $gray-950;
+  cursor: pointer;
+}
+// toggle 定義按鈕尺寸、位置
+.toggleContainer::before {
+  content:'';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0%;
+  border-radius: 20px;
+  background-color: $primary; //pink
+  transition: all 0.3s;
+}
+// 切換時，按鈕移動範圍為 toggle 總寬度的一半
+.toggleCheckbox:checked + .toggleContainer::before {
+   left: 50%;
+}
+// 按鈕內的文字配置
+.toggleContainer div {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  text-align: center;
+  z-index: 1;
+}
+// 隱藏 checkbox
+.toggleCheckbox {
+  display: none;
+}
+// 當點擊按鈕時，按鈕樣式切換為 尚未點擊狀態
+.toggleCheckbox:checked + .toggleContainer div:first-child{
+  color: $gray-950;
+  transition: color 0.3s;
+}
+// 當點擊按鈕時，按鈕樣式切換為 active
+.toggleCheckbox:checked + .toggleContainer div:last-child{
+  color: $white;
+  transition: color 0.3s;
+}
+
+// 當按鈕沒被點擊時，按鈕文字顯示白色
+.toggleCheckbox + .toggleContainer div:first-child{
+  color: $white;
+  transition: color 0.3s;
+  padding: 4px 12px;
+}
+
+// 當按鈕被點擊時，另一邊的文字顯示黑色
+.toggleCheckbox + .toggleContainer div:last-child{
+  color: $gray-950;
+  transition: color 0.3s;
+}

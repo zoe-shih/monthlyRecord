@@ -377,7 +377,10 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $gray-950
+  "dark":       $gray-950,
+  "dark-2":       $gray-700,
+  "dark-3":       $gray-300,
+  "dark-4":       $gray-500
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -501,6 +504,8 @@ $position-values: (
   10: 10%,
   25: 25%,
   50: 50%,
+  75: 75%,
+  90: 90%,
   100: 100%
 ) !default;
 // scss-docs-end position-map

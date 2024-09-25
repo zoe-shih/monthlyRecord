@@ -1,16 +1,15 @@
 .form-check-input {
-    width: 27px;
-    height: 27px;
+    width: 22px;
+    height: 22px;
+    border-color: #6D6D6D;
 }
 
 .calendar-2 {
     background-color: $primary-extra-light;
+    min-width: 350px;
 }
-.calendar-3 {
-    max-width: 335px;
-}
-// .calendar-4 {
-//     justify-content: start;
+// .calendar-3 {
+//     max-width: 335px;
 // }
 .check {
     width: 100%;

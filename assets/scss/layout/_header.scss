@@ -1,3 +1,16 @@
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: $primary;
+    border-radius: 30px;
+    color: $white; 
+}
+.nav-link {
+    color: $gray-800; 
+}
+
+
+
+
+
 // // toggle 切換年份、月份
 // .toggleContainer {
 //   position: relative;
